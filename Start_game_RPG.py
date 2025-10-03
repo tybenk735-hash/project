@@ -53,7 +53,7 @@ def finding_stats():
         person['intellect'] = 1
     return person['health'], person['m_dmg'], person['intellect']
 
-
+#Вывод информации и характеристик
 def u_info_out():
     msg = f"""
     {"Физический урон:":-<20}{person['f_dmg']:->20}
