@@ -12,6 +12,7 @@ person = {
 person["name"] = input("Введите имя: ")
 person["age"] = input("Введите возраст: ")
 
+#Ввод информации о персонаже
 def input_data():
     global person
     try:
@@ -22,6 +23,7 @@ def input_data():
     except:
         input_data()
 
+#Определение характеристик персонажа
 def finding_stats():
     global person
     rat = 100
