@@ -1,5 +1,5 @@
+opponent = {
+    "name" : "Test"
+}
 def create_opponent():
-    opponent = {
-        "name" : "Test"
-    }
-print ("name")
+    print ("name")
