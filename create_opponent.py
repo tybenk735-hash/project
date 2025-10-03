@@ -1,2 +1,5 @@
 def create_opponent():
-    pass
+    opponent = {
+        "name" : "Test"
+    }
+print ("name")
