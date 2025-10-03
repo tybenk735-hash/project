@@ -43,6 +43,14 @@ def finding_stats():
         person["health"] = rat*0.8
         person["f_dmg"] = rat*0.25
         person['intellect'] = 5
+    elif   (person['type'] == 'дракон' and int(person['age']) <= 124):
+        person["health"] = rat
+        person["f_dmg"] = rat*0.6
+        person['intellect'] = 1
+    elif   (person['type'] == 'дракон' and int(person['age']) >= 125):
+        person["health"] = rat*10
+        person["f_dmg"] = rat*1.5
+        person['intellect'] = 1
     return person['health'], person['m_dmg'], person['intellect']
 
 
