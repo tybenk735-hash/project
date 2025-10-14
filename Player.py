@@ -21,9 +21,19 @@ class Player:
             type = input("Выбери класс(Воин, Маг, Лучник) ").lower()
             if type == "воин" or type == "в":
                 self.health = 1000
-                self.ph_dmg = 275
+                self.ph_dmg = 175
                 self.speed = 10
                 return "воин"
+            elif type == "маг" or type == "м":
+                self.health = 600
+                self.m_dmg = 305
+                self.speed = 6
+                return "маг"
+            elif type == "лучник" or type == "л":
+                self.health = 500
+                self.ph_dmg = 305
+                self.speed = 8
+                return "лучник"
         except:
             print("Неверные данные, попробуйте снова")
             return self.change_type()
