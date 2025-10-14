@@ -37,3 +37,15 @@ class Player:
         except:
             print("Неверные данные, попробуйте снова")
             return self.change_type()
+    
+    def get_info(self):
+        msg = f"""
+{"Имя":-<20}{self.name:->20}
+{"Возраст":-<20}{self.age:->20}
+{"Класс":-<20}{self.type:->20}
+{"Здоровье:":-<20}{self.health:->20}
+{"Физический урон:":-<20}{self.ph_dmg:->20}
+{"Магичемккий урон:":-<20}{self.m_dmg:->20}
+{"Скорость":-<20}{self.speed:->20}
+"""
+        print(msg)
