@@ -26,4 +26,4 @@ class Player:
                 return "воин"
         except:
             print("Неверные данные, попробуйте снова")
-            change_type()
+            return self.change_type()
