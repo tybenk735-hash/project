@@ -15,7 +15,7 @@ class Player:
         self.backpack.item_in_backpack(Руда)
         self.type = self.change_type()
         
-        
+    #Функция выбора класса    
     def change_type(self):
         try:
             type = input("Выбери класс(Воин, Маг, Лучник) ").lower()
