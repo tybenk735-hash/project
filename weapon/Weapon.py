@@ -1,6 +1,8 @@
 class Weapon:
-    def __init__(self, info):
-        pass
+    def __init__(self, name: str, durability, cooldown: int):
+        self.name = name
+        self.durability = durability
+        self.cooldown = cooldown
     
     def use_range_attack(self):
         pass

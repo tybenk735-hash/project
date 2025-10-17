@@ -1,6 +1,6 @@
 from Weapon import Weapon
 
-class Bow:
+class Bow(Weapon):
     def __init__(self):
         super().__init__()
 
