@@ -1,4 +1,4 @@
-import Backpack
+from Backpack import Backpack
 
 class Player:
     def __init__(self, name):
@@ -22,18 +22,19 @@ class Player:
             if type == "воин" or type == "в":
                 self.health = 1000
                 self.ph_dmg = 175
-                self.speed = 10
+                self.speed = 8
                 return "воин"
             elif type == "маг" or type == "м":
                 self.health = 600
-                self.m_dmg = 305
+                self.m_dmg = 550
                 self.speed = 6
                 return "маг"
             elif type == "лучник" or type == "л":
                 self.health = 500
                 self.ph_dmg = 305
-                self.speed = 8
+                self.speed = 10
                 return "лучник"
+            raise
         except:
             print("Неверные данные, попробуйте снова")
             return self.change_type()
@@ -49,3 +50,4 @@ class Player:
 {"Скорость":-<20}{self.speed:->20}
 """
         print(msg)
+        
