@@ -9,10 +9,10 @@ class Player:
         self.ph_dmg = 0
         self.speed = 0
         self.backpack = Backpack.Backpack(100, 50)
-        self.backpack.item_in_backpack(Меч)
-        self.backpack.item_in_backpack(Еда)
-        self.backpack.item_in_backpack(Лук)
-        self.backpack.item_in_backpack(Руда)
+        self.backpack.item_in_backpack("Меч")
+        self.backpack.item_in_backpack("Еда")
+        self.backpack.item_in_backpack("Лук")
+        self.backpack.item_in_backpack("Руда")
         self.type = self.change_type()
         
     #Функция выбора класса    
@@ -49,5 +49,4 @@ class Player:
 {"Магичемккий урон:":-<20}{self.m_dmg:->20}
 {"Скорость":-<20}{self.speed:->20}
 """
-        print(msg)
-        
+        return print(msg)

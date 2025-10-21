@@ -24,5 +24,5 @@ class Backpack:
         id_item = int(input("Введите номер предмета, который хотите испольковать: "))
         return self.items[id_item]
     
-backpack = Backpack
+    
     
