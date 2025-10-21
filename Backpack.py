@@ -1,3 +1,5 @@
+from weapon import Sword, Bow, Stuff
+
 class Backpack:
     def __init__(self, durability, value):
         self.durability = durability

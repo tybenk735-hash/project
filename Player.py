@@ -1,4 +1,5 @@
 from Backpack import Backpack
+from weapon import Sword, Bow, Stuff
 
 class Player:
     def __init__(self, name):
@@ -9,7 +10,7 @@ class Player:
         self.ph_dmg = 0
         self.speed = 0
         self.backpack = Backpack.Backpack(100, 50)
-        self.backpack.item_in_backpack("Меч")
+        self.backpack.item_in_backpack("Меч Путешевственника")
         self.backpack.item_in_backpack("Еда")
         self.backpack.item_in_backpack("Лук")
         self.backpack.item_in_backpack("Руда")
